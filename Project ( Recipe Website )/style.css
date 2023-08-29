@@ -1,0 +1,169 @@
+#navlist{
+    list-style-type: none;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 15px;
+    margin-right: 50px;
+    align-items: center;
+    gap: 500px;
+
+    
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    align-items: center;
+    background: rgb(107,107,116);
+background: linear-gradient(90deg, rgba(107,107,116,1) 0%, rgba(79,76,76,1) 0%, rgba(154,149,149,1) 14%, rgba(142,139,139,1) 85%, rgba(90,90,90,1) 100%, rgba(187,190,191,1) 100%);
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+    
+    
+}
+
+.navcontainer{
+    width: 100vw;
+    background: rgb(107,107,116);
+background: linear-gradient(90deg, rgba(107,107,116,1) 0%, rgba(79,76,76,1) 0%, rgba(154,149,149,1) 14%, rgba(142,139,139,1) 85%, rgba(90,90,90,1) 100%, rgba(187,190,191,1) 100%);
+    
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.navlogo{
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+.navitems{
+    display: flex;
+    gap: 40px;
+    color: white;
+
+
+}
+
+.footerbox{
+    background-color: rgb(88, 86, 86);
+ 
+ width: 100%;
+ text-align: center;
+ min-height: 50px
+ 
+ 
+
+}
+.footerbox p {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    flex: end;
+    
+}
+
+.contentbox{
+    width: 60%;
+    margin: auto;
+    
+    background: rgb(107,107,116);
+background: linear-gradient(90deg, rgba(107,107,116,1) 0%, rgba(79,76,76,1) 0%, rgba(154,149,149,1) 14%, rgba(142,139,139,1) 85%, rgba(90,90,90,1) 100%, rgba(187,190,191,1) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 10px 1px 50px rgb(0, 0, 0);
+    
+    
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.leftbox{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+
+.rightbox img{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    transition: all 0.6s linear 0s;
+    border-radius: 50%;
+    
+   
+    
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s ;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 60%;
+
+
+}
+
+.rightbox:hover{
+    transform: scale(1.2);
+}  
+.leftbox h2{
+    font-size: 2rem;
+
+}
+.ingbox{
+    font-size: 1.3rem;
+}
+
+.recipebox{
+    font-size: 1.2rem;
+
+}
+ 
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(27, 26, 26, 0.585);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    border-radius: 50%;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+    
+}
